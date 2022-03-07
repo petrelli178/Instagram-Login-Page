@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .instagram-wrapper {
@@ -39,7 +39,7 @@ body {
 .instagram-continue {
     display: flex;
     align-items: center; /* horizontal */
-    justify-content: space-around; /* Vertical */
+    justify-content: space-around; /* vertical */
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
@@ -50,14 +50,14 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
 }
 
 .group:nth-child(1) {
-    min-height: 19rem;    
+    min-height: 19rem;
 }
 
 .instagram-logo {
@@ -73,7 +73,7 @@ body {
 }
 
 .profile-photo img {
-    height: 10rem;
+    height: 6rem;
 }
 
 .instagram-login {
@@ -81,12 +81,11 @@ body {
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
-    margin-top: 1rem;
 }
 
 .instagram-logout {
     color: #0095f6;
-    margin-top: 1rem;    
+    margin-top: 1rem;
 }
 
 .not-account {
@@ -103,7 +102,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 3.3rem 0;
+    padding: 1.3rem 0;
 }
 
 .download {
@@ -120,17 +119,41 @@ body {
     background-size: cover;
 }
 
-.app-download:nth-last-child(1) {
+.app-download:nth-child(1) {
     background-image: url('./img/apple-button.png');
 }
-.app-download:nth-last-child(2) {
+
+.app-download:nth-child(2) {
     background-image: url('./img/googleplay-button.png');
 }
 
-/* media queries*/
+/* media queries */
+
 
 @media (max-width: 1024px) {
     .instagram-wrapper {
         width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
     }
 }
